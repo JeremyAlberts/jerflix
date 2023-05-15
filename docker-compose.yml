@@ -1,0 +1,9 @@
+services:
+  vite:
+    image: node:18-alpine
+    command: yarn dev --host
+    ports:
+      - 5173:5173
+    working_dir: /app
+    volumes:
+      - ./:/app
