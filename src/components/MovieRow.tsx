@@ -1,20 +1,23 @@
 import MovieCard from './MovieCard'
 
-function MovieRow() {
+interface VideoList {
+  title: string;
+  videos: any[];
+}
+
+function MovieRow(props: VideoList) {
 
     return (
       <>
         <div className="row">
           <div className="col">
-            <h1 className='d-flex title'>Title</h1>
+            <h1 className='d-flex title'>{props.title}</h1>
           </div>
         </div>
         <div className="row">
-          <MovieCard/>
-          <MovieCard/>
-          <MovieCard/>
-          <MovieCard/>
-          <MovieCard/>
+          {props.videos.map(video => (
+            <MovieCard video={video}/>
+          ))}          
         </div>
       </>
     )

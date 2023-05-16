@@ -1,5 +1,6 @@
 import jerflix from './assets/jerflix.png'
-import MovieRow from './components/MovieRow'
+import MyRouter from './MyRouter'
+import MoviePage from './pages/MoviesPage'
 
 function App() {
 
@@ -9,9 +10,10 @@ function App() {
         <img className='justify-content-center' src={jerflix} alt="" />
       </div>
       <div className="container">
-        <MovieRow/>
-        <MovieRow/>
-        <MovieRow/>
+        <MoviePage/>
+        {/* <MovieRow/> */}
+        {/* <Video/> */}
+        {/* <MyRouter/> */}
       </div>
     </>
   )
