@@ -1,4 +1,4 @@
-import MovieRow from './components/MovieRow'
+import MoviesPage from './pages/MoviesPage';
 import Video from './components/Video'
 import {
   createBrowserRouter,
@@ -8,10 +8,10 @@ import {
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <MovieRow/>,
+    element: <MoviesPage/>,
   },
   {
-    path: "video/:id",
+    path: "category/:catId/video/:videoId",
     element: <Video/>,
   },
 ]);

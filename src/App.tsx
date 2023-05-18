@@ -10,10 +10,10 @@ function App() {
         <img className='justify-content-center' src={jerflix} alt="" />
       </div>
       <div className="container">
-        <MoviePage/>
+        {/* <MoviePage/> */}
         {/* <MovieRow/> */}
         {/* <Video/> */}
-        {/* <MyRouter/> */}
+        <MyRouter/>
       </div>
     </>
   )

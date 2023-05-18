@@ -6,7 +6,7 @@ function MoviesPage() {
     return (
         <>
             {content.map(list => (
-                <MovieRow key={list.catId} title={list.title} videos={list.videos} />
+                <MovieRow key={list.catId} list={list} />
             ))}
         </>
     )
