@@ -42,12 +42,14 @@ const content = [
             {
                 id: "11",
                 title: "Test",
-                thumbnail: "https://placekitten.com/1920/1080"
+                thumbnail: "https://placekitten.com/1920/1080",
+                source: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4"
             },
             {
                 id: "12",
                 title: "Test",
-                thumbnail: "https://placekitten.com/1920/1080"
+                thumbnail: "https://placekitten.com/1920/1080",
+                source: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4"
             },
         ]
     }

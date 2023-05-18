@@ -43,6 +43,7 @@ html, body {
   width: -moz-fit-content;
   width: fit-content;
   display: table;
+  margin-bottom: 20px;
 }
 
 .header {
@@ -62,19 +63,27 @@ html, body {
   to {box-shadow: 0 4px 30px 5px #6C31BF;}
 }
 
+.videos {
+  margin-bottom: 20px;
+}
+
 .header img {
   width: 200px;
 }
 
-.movieCard .thumbnail {
+.movieCard {
   border: #6C31BF solid 6px;
   border-radius: 10px;
-  transition: all 0.2s ease-in-out;
-  box-sizing: border-box;
   margin-bottom: 15px;
+  transition: all 0.2s ease-in-out;
 }
 
-.movieCard .thumbnail:hover {
+.movieCard .thumbnail {
+  box-sizing: border-box;
+  border-radius: 5px 5px 0 0;
+}
+
+.movieCard:hover {
   border: #935ae2 solid 6px;
   box-shadow: 0px 0px 20px 3px #6C31BF;
 }
@@ -88,7 +97,29 @@ html, body {
   pointer-events: none; 
 }
 
-.movieCard .thumbnail:hover + .play {
+.movieCard:hover .play {
   opacity: 100;
+}
+
+.movieCard:hover .videoTitle {
+ color: #935ae2;
+}
+
+.videoPlayer {
+  margin-bottom: 20px;
+}
+
+.movieCard a {
+  text-decoration: none; 
+}
+
+.movieCard .videoTitle {
+  background-color: #1c1c1c;
+  margin: 0;
+  padding: 5px 0 5px 10px;
+  border-radius: 0 0 5px 5px;
+  font-weight: bold;
+  color: #ddd;
+  transition: all 0.2s ease-in-out;
 }
 

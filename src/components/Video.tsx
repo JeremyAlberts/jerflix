@@ -1,5 +1,6 @@
 import kagura from '../assets/kagura.mp4'
 import { useParams } from "react-router-dom";
+import { useRef, useEffect } from 'react';
 import MovieRow from '../components/MovieRow'
 import content from '../data'
 
@@ -22,11 +23,11 @@ function Video() {
             <h1 className='d-flex title'>{video?.title}</h1>
           </div>
         </div>
-        <div className="row">
+        <div className="row videoPlayer">
             <div className="col">
                 <div className='video-container'>
-                    <video id="vid1" className="video-js" data-setup='{}' controls>
-                        <source src={video.source} type='video/mp4'/>
+                    <video id="vid1" className="video-js" data-setup='{}' key={video?.id} controls>
+                        <source src={video?.source} type='video/mp4'/>
                     </video>
                 </div>
             </div>
